@@ -1,0 +1,155 @@
+*{
+	box-sizing: border-box;
+}
+.row::after{
+	content:"";
+	clear:both;
+	display:table;
+}
+[class*="col-"]{
+	float:left;
+	padding:15px;
+}
+/*For mobile phones*/
+[class*="col-"]{
+	width:100%;
+}
+/* For tablets: */
+@media only screen and (min-width: 600px){
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+	#contact-elements{
+	text-align:left;
+	}
+	#contact-elements h2{
+		text-align:center;
+	}
+	.line{
+		display: inline-block;
+	}
+}
+
+/*For desktop*/
+@media only screen and (min-width:768px){
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+	#main .contents {
+		padding: 0px 60px;
+	}
+	#left-col{
+	background-color:white;
+	}
+	#left-aside{
+		padding: 90px 0px 150px 0px;
+	}
+	#right-section .title{
+		display: block;
+	}
+	#left-aside .title{
+		display: none;
+	}
+	#left-aside i{
+		font-size: 3.3em;
+		margin-right: 20px;
+	}
+	#main:hover #left-col{
+		background-color:white;
+	}
+	#right-section #title h1{
+		font-size: 6.1vw;
+	}
+	#right-section #title h3{
+		font-size: 3.5vw;
+	}
+	#right-section .contents{
+		padding: 0 40px;
+	}
+	h2{
+		font-size: 1.7em;
+	}
+	#left-aside img {
+    height: auto;
+    width: 70%;
+	animation-name: expand-img;
+	animation-duration: 1.5s;
+	}
+	#contact-elements h2{
+		text-align:left;
+	}
+	@keyframes expand-img{
+		from{
+			width:50%;
+		}
+		to{
+			width:70%;
+		}
+	}
+	@-webkit-@keyframes expand-img{
+		from{
+			width:50%;
+		}
+		to{
+			width:70%;
+		}
+	}
+@media only screen and (max-width: 1092px) and (min-width: 768px){
+	.line{
+		display:block;
+	}
+	#left-aside{
+		padding: 90px 0px 350px 0px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
